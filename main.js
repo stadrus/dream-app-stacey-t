@@ -3,11 +3,12 @@ const readline = require('readline-sync');
 let userName = readline.question(`Hello, Welcome to Close to Home. 
     Please enter your Name: `);
     console.log(`${userName}. Welcome to Close to Home!`);
-// I would use readline sync to prompt the user for thier name and output a greeting. while useing template literals to keep it simple.  
+//1. Module Values, Data Types, and Operations: I would use readline sync to prompt the user for thier name and output a greeting. while useing template literals to keep it simple.
+// 2. Module Stringing characters together: Template literals line 5
 
 let password = "";
 let isValid = false;
-// boolens will be used to validate the users input.  
+// 3. Module Control Structures and Logic: boolens will be used to validate the users input.  
 
 while(!isValid){
     password = readline.question("Enter a password: ");
@@ -31,7 +32,7 @@ if (passwordLength >= 8 && passwordUpperCase && passwordNumber){
     console.log("Password is not valid.");
     };
 };
-// using while, and If loops would help the user create a personal password. much like the practice quiz. 
+// 4. Module Working with Loops: using while, and If else loops would help the user create a personal password. much like the practice quiz. 
 
 
 familyPassword = (inputPassword, storedPassword);{
@@ -49,8 +50,8 @@ let familyMembers = ["Tom", "Jen", "Sally,"];
 let addFamilyMeber (userName){
     familyMembers.push(userName);
 }
-// Arrays will store famliy members information. 
+// 5. Module Building Arrays: Arrays will store famliy members information. 
 let removeFamilyMembers (userName){
     familyMembers.filter(member => member !== userName)
 }
-// Since this apps allows new members, I will need to use the push() method to add new members and filter() to remove members. 
+// 6. Module Using Arrays: Array Iterator, Since this apps allows new members, I will need to use the push() method to add new members and filter() to remove members. 
