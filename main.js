@@ -37,7 +37,7 @@ if (passwordLength && passwordUpperCase && passwordNumber){
  
 //5. Module Using Arrays: Array Iterator, Since this apps allows new members, I will need to use the push() method to add new members and filter() to remove members.
 
-const familyMembers = [];
+let familyMembers = [];
 
 function addFamilyMember (name) {
     familyMembers.push(name);
@@ -52,13 +52,14 @@ addFamilyMember("Tom");
 console.log(getUsers());
 
 //6. Module Building Arrays: Arrays will store famliy members information.// 
-function removeFamilyMembers (familyMembers) {
-    familyMembers.filter(familyMembers.name => name !== name)
-    console.log(`${name} has been removed.`)
+function removeFamilyMembers (name) {
+    familyMembers.filter(name => name);
+    console.log(`${name} has been removed.`);
 }
-// function getUsers(){
-//     return familyMembers;
-// }
+function getUsers(){
+    return familyMembers;
+}
+console.log(getUsers(removeFamilyMembers));
 removeFamilyMembers("Sally");
 
  
